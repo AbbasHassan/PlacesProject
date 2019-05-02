@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- google's material design colours from
+  http://www.google.com/design/spec/style/drawable.html#drawable-ui-drawable-palette -->
+
+  <!--reds-->
+  <drawable name="md_red_50">#FFEBEE</drawable>
+  <drawable name="md_red_100">#FFCDD2</drawable>
+  <drawable name="md_red_200">#EF9A9A</drawable>
+  <drawable name="md_red_300">#E57373</drawable>
+  <drawable name="md_red_400">#EF5350</drawable>
+  <drawable name="md_red_500">#F44336</drawable>
+  <drawable name="md_red_600">#E53935</drawable>
+  <drawable name="md_red_700">#D32F2F</drawable>
+  <drawable name="md_red_800">#C62828</drawable>
+  <drawable name="md_red_900">#B71C1C</drawable>
+  <drawable name="md_red_A100">#FF8A80</drawable>
+  <drawable name="md_red_A200">#FF5252</drawable>
+  <drawable name="md_red_A400">#FF1744</drawable>
+  <drawable name="md_red_A700">#D50000</drawable>
+
+  <!-- pinks -->
+  <drawable name="md_pink_50">#FCE4EC</drawable>
+  <drawable name="md_pink_100">#F8BBD0</drawable>
+  <drawable name="md_pink_200">#F48FB1</drawable>
+  <drawable name="md_pink_300">#F06292</drawable>
+  <drawable name="md_pink_400">#EC407A</drawable>
+  <drawable name="md_pink_500">#E91E63</drawable>
+  <drawable name="md_pink_600">#D81B60</drawable>
+  <drawable name="md_pink_700">#C2185B</drawable>
+  <drawable name="md_pink_800">#AD1457</drawable>
+  <drawable name="md_pink_900">#880E4F</drawable>
+  <drawable name="md_pink_A100">#FF80AB</drawable>
+  <drawable name="md_pink_A200">#FF4081</drawable>
+  <drawable name="md_pink_A400">#F50057</drawable>
+  <drawable name="md_pink_A700">#C51162</drawable>
+
+  <!-- purples -->
+  <drawable name="md_purple_50">#F3E5F5</drawable>
+  <drawable name="md_purple_100">#E1BEE7</drawable>
+  <drawable name="md_purple_200">#CE93D8</drawable>
+  <drawable name="md_purple_300">#BA68C8</drawable>
+  <drawable name="md_purple_400">#AB47BC</drawable>
+  <drawable name="md_purple_500">#9C27B0</drawable>
+  <drawable name="md_purple_600">#8E24AA</drawable>
+  <drawable name="md_purple_700">#7B1FA2</drawable>
+  <drawable name="md_purple_800">#6A1B9A</drawable>
+  <drawable name="md_purple_900">#4A148C</drawable>
+  <drawable name="md_purple_A100">#EA80FC</drawable>
+  <drawable name="md_purple_A200">#E040FB</drawable>
+  <drawable name="md_purple_A400">#D500F9</drawable>
+  <drawable name="md_purple_A700">#AA00FF</drawable>
+
+  <!-- deep purples -->
+  <drawable name="md_deep_purple_50">#EDE7F6</drawable>
+  <drawable name="md_deep_purple_100">#D1C4E9</drawable>
+  <drawable name="md_deep_purple_200">#B39DDB</drawable>
+  <drawable name="md_deep_purple_300">#9575CD</drawable>
+  <drawable name="md_deep_purple_400">#7E57C2</drawable>
+  <drawable name="md_deep_purple_500">#673AB7</drawable>
+  <drawable name="md_deep_purple_600">#5E35B1</drawable>
+  <drawable name="md_deep_purple_700">#512DA8</drawable>
+  <drawable name="md_deep_purple_800">#4527A0</drawable>
+  <drawable name="md_deep_purple_900">#311B92</drawable>
+  <drawable name="md_deep_purple_A100">#B388FF</drawable>
+  <drawable name="md_deep_purple_A200">#7C4DFF</drawable>
+  <drawable name="md_deep_purple_A400">#651FFF</drawable>
+  <drawable name="md_deep_purple_A700">#6200EA</drawable>
+
+  <!-- indigo -->
+  <drawable name="md_indigo_50">#E8EAF6</drawable>
+  <drawable name="md_indigo_100">#C5CAE9</drawable>
+  <drawable name="md_indigo_200">#9FA8DA</drawable>
+  <drawable name="md_indigo_300">#7986CB</drawable>
+  <drawable name="md_indigo_400">#5C6BC0</drawable>
+  <drawable name="md_indigo_500">#3F51B5</drawable>
+  <drawable name="md_indigo_600">#3949AB</drawable>
+  <drawable name="md_indigo_700">#303F9F</drawable>
+  <drawable name="md_indigo_800">#283593</drawable>
+  <drawable name="md_indigo_900">#1A237E</drawable>
+  <drawable name="md_indigo_A100">#8C9EFF</drawable>
+  <drawable name="md_indigo_A200">#536DFE</drawable>
+  <drawable name="md_indigo_A400">#3D5AFE</drawable>
+  <drawable name="md_indigo_A700">#304FFE</drawable>
+
+  <!--blue-->
+  <drawable name="md_blue_50">#E3F2FD</drawable>
+  <drawable name="md_blue_100">#BBDEFB</drawable>
+  <drawable name="md_blue_200">#90CAF9</drawable>
+  <drawable name="md_blue_300">#64B5F6</drawable>
+  <drawable name="md_blue_400">#42A5F5</drawable>
+  <drawable name="md_blue_500">#2196F3</drawable>
+  <drawable name="md_blue_600">#1E88E5</drawable>
+  <drawable name="md_blue_700">#1976D2</drawable>
+  <drawable name="md_blue_800">#1565C0</drawable>
+  <drawable name="md_blue_900">#0D47A1</drawable>
+  <drawable name="md_blue_A100">#82B1FF</drawable>
+  <drawable name="md_blue_A200">#448AFF</drawable>
+  <drawable name="md_blue_A400">#2979FF</drawable>
+  <drawable name="md_blue_A700">#2962FF</drawable>
+
+  <!-- light blue-->
+  <drawable name="md_light_blue_50">#E1F5FE</drawable>
+  <drawable name="md_light_blue_100">#B3E5FC</drawable>
+  <drawable name="md_light_blue_200">#81D4fA</drawable>
+  <drawable name="md_light_blue_300">#4fC3F7</drawable>
+  <drawable name="md_light_blue_400">#29B6FC</drawable>
+  <drawable name="md_light_blue_500">#03A9F4</drawable>
+  <drawable name="md_light_blue_600">#039BE5</drawable>
+  <drawable name="md_light_blue_700">#0288D1</drawable>
+  <drawable name="md_light_blue_800">#0277BD</drawable>
+  <drawable name="md_light_blue_900">#01579B</drawable>
+  <drawable name="md_light_blue_A100">#80D8FF</drawable>
+  <drawable name="md_light_blue_A200">#40C4FF</drawable>
+  <drawable name="md_light_blue_A400">#00B0FF</drawable>
+  <drawable name="md_light_blue_A700">#0091EA</drawable>
+
+  <!-- cyan -->
+  <drawable name="md_cyan_50">#E0F7FA</drawable>
+  <drawable name="md_cyan_100">#B2EBF2</drawable>
+  <drawable name="md_cyan_200">#80DEEA</drawable>
+  <drawable name="md_cyan_300">#4DD0E1</drawable>
+  <drawable name="md_cyan_400">#26C6DA</drawable>
+  <drawable name="md_cyan_500">#00BCD4</drawable>
+  <drawable name="md_cyan_600">#00ACC1</drawable>
+  <drawable name="md_cyan_700">#0097A7</drawable>
+  <drawable name="md_cyan_800">#00838F</drawable>
+  <drawable name="md_cyan_900">#006064</drawable>
+  <drawable name="md_cyan_A100">#84FFFF</drawable>
+  <drawable name="md_cyan_A200">#18FFFF</drawable>
+  <drawable name="md_cyan_A400">#00E5FF</drawable>
+  <drawable name="md_cyan_A700">#00B8D4</drawable>
+
+  <!-- teal -->
+  <drawable name="md_teal_50">#E0F2F1</drawable>
+  <drawable name="md_teal_100">#B2DFDB</drawable>
+  <drawable name="md_teal_200">#80CBC4</drawable>
+  <drawable name="md_teal_300">#4DB6AC</drawable>
+  <drawable name="md_teal_400">#26A69A</drawable>
+  <drawable name="md_teal_500">#009688</drawable>
+  <drawable name="md_teal_600">#00897B</drawable>
+  <drawable name="md_teal_700">#00796B</drawable>
+  <drawable name="md_teal_800">#00695C</drawable>
+  <drawable name="md_teal_900">#004D40</drawable>
+  <drawable name="md_teal_A100">#A7FFEB</drawable>
+  <drawable name="md_teal_A200">#64FFDA</drawable>
+  <drawable name="md_teal_A400">#1DE9B6</drawable>
+  <drawable name="md_teal_A700">#00BFA5</drawable>
+
+  <!-- green -->
+  <drawable name="md_green_50">#E8F5E9</drawable>
+  <drawable name="md_green_100">#C8E6C9</drawable>
+  <drawable name="md_green_200">#A5D6A7</drawable>
+  <drawable name="md_green_300">#81C784</drawable>
+  <drawable name="md_green_400">#66BB6A</drawable>
+  <drawable name="md_green_500">#4CAF50</drawable>
+  <drawable name="md_green_600">#43A047</drawable>
+  <drawable name="md_green_700">#388E3C</drawable>
+  <drawable name="md_green_800">#2E7D32</drawable>
+  <drawable name="md_green_900">#1B5E20</drawable>
+  <drawable name="md_green_A100">#B9F6CA</drawable>
+  <drawable name="md_green_A200">#69F0AE</drawable>
+  <drawable name="md_green_A400">#00E676</drawable>
+  <drawable name="md_green_A700">#00C853</drawable>
+
+  <!--light green-->
+  <drawable name="md_light_green_50">#F1F8E9</drawable>
+  <drawable name="md_light_green_100">#DCEDC8</drawable>
+  <drawable name="md_light_green_200">#C5E1A5</drawable>
+  <drawable name="md_light_green_300">#AED581</drawable>
+  <drawable name="md_light_green_400">#9CCC65</drawable>
+  <drawable name="md_light_green_500">#8BC34A</drawable>
+  <drawable name="md_light_green_600">#7CB342</drawable>
+  <drawable name="md_light_green_700">#689F38</drawable>
+  <drawable name="md_light_green_800">#558B2F</drawable>
+  <drawable name="md_light_green_900">#33691E</drawable>
+  <drawable name="md_light_green_A100">#CCFF90</drawable>
+  <drawable name="md_light_green_A200">#B2FF59</drawable>
+  <drawable name="md_light_green_A400">#76FF03</drawable>
+  <drawable name="md_light_green_A700">#64DD17</drawable>
+
+  <!-- lime-->
+  <drawable name="md_lime_50">#F9FBE7</drawable>
+  <drawable name="md_lime_100">#F0F4C3</drawable>
+  <drawable name="md_lime_200">#E6EE9C</drawable>
+  <drawable name="md_lime_300">#DCE775</drawable>
+  <drawable name="md_lime_400">#D4E157</drawable>
+  <drawable name="md_lime_500">#CDDC39</drawable>
+  <drawable name="md_lime_600">#C0CA33</drawable>
+  <drawable name="md_lime_700">#A4B42B</drawable>
+  <drawable name="md_lime_800">#9E9D24</drawable>
+  <drawable name="md_lime_900">#827717</drawable>
+  <drawable name="md_lime_A100">#F4FF81</drawable>
+  <drawable name="md_lime_A200">#EEFF41</drawable>
+  <drawable name="md_lime_A400">#C6FF00</drawable>
+  <drawable name="md_lime_A700">#AEEA00</drawable>
+
+  <!--yellow -->
+  <drawable name="md_yellow_50">#FFFDE7</drawable>
+  <drawable name="md_yellow_100">#FFF9C4</drawable>
+  <drawable name="md_yellow_200">#FFF590</drawable>
+  <drawable name="md_yellow_300">#FFF176</drawable>
+  <drawable name="md_yellow_400">#FFEE58</drawable>
+  <drawable name="md_yellow_500">#FFEB3B</drawable>
+  <drawable name="md_yellow_600">#FDD835</drawable>
+  <drawable name="md_yellow_700">#FBC02D</drawable>
+  <drawable name="md_yellow_800">#F9A825</drawable>
+  <drawable name="md_yellow_900">#F57F17</drawable>
+  <drawable name="md_yellow_A100">#FFFF82</drawable>
+  <drawable name="md_yellow_A200">#FFFF00</drawable>
+  <drawable name="md_yellow_A400">#FFEA00</drawable>
+  <drawable name="md_yellow_A700">#FFD600</drawable>
+
+  <!--amber-->
+  <drawable name="md_amber_50">#FFF8E1</drawable>
+  <drawable name="md_amber_100">#FFECB3</drawable>
+  <drawable name="md_amber_200">#FFE082</drawable>
+  <drawable name="md_amber_300">#FFD54F</drawable>
+  <drawable name="md_amber_400">#FFCA28</drawable>
+  <drawable name="md_amber_500">#FFC107</drawable>
+  <drawable name="md_amber_600">#FFB300</drawable>
+  <drawable name="md_amber_700">#FFA000</drawable>
+  <drawable name="md_amber_800">#FF8F00</drawable>
+  <drawable name="md_amber_900">#FF6F00</drawable>
+  <drawable name="md_amber_A100">#FFE57F</drawable>
+  <drawable name="md_amber_A200">#FFD740</drawable>
+  <drawable name="md_amber_A400">#FFC400</drawable>
+  <drawable name="md_amber_A700">#FFAB00</drawable>
+
+  <!--orange-->
+  <drawable name="md_orange_50">#FFF3E0</drawable>
+  <drawable name="md_orange_100">#FFE0B2</drawable>
+  <drawable name="md_orange_200">#FFCC80</drawable>
+  <drawable name="md_orange_300">#FFB74D</drawable>
+  <drawable name="md_orange_400">#FFA726</drawable>
+  <drawable name="md_orange_500">#FF9800</drawable>
+  <drawable name="md_orange_600">#FB8C00</drawable>
+  <drawable name="md_orange_700">#F57C00</drawable>
+  <drawable name="md_orange_800">#EF6C00</drawable>
+  <drawable name="md_orange_900">#E65100</drawable>
+  <drawable name="md_orange_A100">#FFD180</drawable>
+  <drawable name="md_orange_A200">#FFAB40</drawable>
+  <drawable name="md_orange_A400">#FF9100</drawable>
+  <drawable name="md_orange_A700">#FF6D00</drawable>
+
+  <!--deep orange-->
+  <drawable name="md_deep_orange_50">#FBE9A7</drawable>
+  <drawable name="md_deep_orange_100">#FFCCBC</drawable>
+  <drawable name="md_deep_orange_200">#FFAB91</drawable>
+  <drawable name="md_deep_orange_300">#FF8A65</drawable>
+  <drawable name="md_deep_orange_400">#FF7043</drawable>
+  <drawable name="md_deep_orange_500">#FF5722</drawable>
+  <drawable name="md_deep_orange_600">#F4511E</drawable>
+  <drawable name="md_deep_orange_700">#E64A19</drawable>
+  <drawable name="md_deep_orange_800">#D84315</drawable>
+  <drawable name="md_deep_orange_900">#BF360C</drawable>
+  <drawable name="md_deep_orange_A100">#FF9E80</drawable>
+  <drawable name="md_deep_orange_A200">#FF6E40</drawable>
+  <drawable name="md_deep_orange_A400">#FF3D00</drawable>
+  <drawable name="md_deep_orange_A700">#DD2600</drawable>
+
+  <!--brown -->
+  <drawable name="md_brown_50">#EFEBE9</drawable>
+  <drawable name="md_brown_100">#D7CCC8</drawable>
+  <drawable name="md_brown_200">#BCAAA4</drawable>
+  <drawable name="md_brown_300">#A1887F</drawable>
+  <drawable name="md_brown_400">#8D6E63</drawable>
+  <drawable name="md_brown_500">#795548</drawable>
+  <drawable name="md_brown_600">#6D4C41</drawable>
+  <drawable name="md_brown_700">#5D4037</drawable>
+  <drawable name="md_brown_800">#4E342E</drawable>
+  <drawable name="md_brown_900">#3E2723</drawable>
+
+  <!--grey-->
+  <drawable name="md_grey_50">#FAFAFA</drawable>
+  <drawable name="md_grey_100">#F5F5F5</drawable>
+  <drawable name="md_grey_200">#EEEEEE</drawable>
+  <drawable name="md_grey_300">#E0E0E0</drawable>
+  <drawable name="md_grey_400">#BDBDBD</drawable>
+  <drawable name="md_grey_500">#9E9E9E</drawable>
+  <drawable name="md_grey_600">#757575</drawable>
+  <drawable name="md_grey_700">#616161</drawable>
+  <drawable name="md_grey_800">#424242</drawable>
+  <drawable name="md_grey_900">#212121</drawable>
+  <drawable name="md_black_1000">#000000</drawable>
+  <drawable name="md_white_1000">#ffffff</drawable>
+
+  <!--blue grey-->
+  <drawable name="md_blue_grey_50">#ECEFF1</drawable>
+  <drawable name="md_blue_grey_100">#CFD8DC</drawable>
+  <drawable name="md_blue_grey_200">#B0BBC5</drawable>
+  <drawable name="md_blue_grey_300">#90A4AE</drawable>
+  <drawable name="md_blue_grey_400">#78909C</drawable>
+  <drawable name="md_blue_grey_500">#607D8B</drawable>
+  <drawable name="md_blue_grey_500_alpha">#87607d8b</drawable>
+  <drawable name="md_blue_grey_600">#546E7A</drawable>
+  <drawable name="md_blue_grey_700">#455A64</drawable>
+  <drawable name="md_blue_grey_800">#37474F</drawable>
+  <drawable name="md_blue_grey_900">#263238</drawable>
+
+</resources>
