@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/colorPrimary"
+        android:background="@color/colorPrimary"
         android:textColor="#FFFFFF"
         android:text="Grant Permission"
         android:textAllCaps="false" />

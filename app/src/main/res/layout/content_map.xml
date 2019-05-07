@@ -53,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:text="Find Restaurants"
         android:textColor="#FFFFFF"
-        android:background="@drawable/colorPrimary"
+        android:background="@color/colorPrimary"
         android:layout_margin="16dp"
         android:textStyle="bold"/>
 
