@@ -108,9 +108,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             @Override
             public void onButtonClicked(int buttonCode) {
-                if(buttonCode == MaterialSearchBar.BUTTON_NAVIGATION){
+                if (buttonCode == MaterialSearchBar.BUTTON_NAVIGATION) {
                     //opening or closing a navigation drawer
-                } else if(buttonCode == MaterialSearchBar.BUTTON_BACK){
+                } else if (buttonCode == MaterialSearchBar.BUTTON_BACK) {
                     materialSearchBar.disableSearch();
                 }
             }
@@ -125,7 +125,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 FindAutocompletePredictionsRequest predictionsRequest = FindAutocompletePredictionsRequest.builder()
-                        .setCountry("pk")
                         .setTypeFilter(TypeFilter.ADDRESS)
                         .setSessionToken(token)
                         .setQuery(s.toString())
@@ -133,18 +132,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 placesClient.findAutocompletePredictions(predictionsRequest).addOnCompleteListener(new OnCompleteListener<FindAutocompletePredictionsResponse>() {
                     @Override
                     public void onComplete(@NonNull Task<FindAutocompletePredictionsResponse> task) {
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             FindAutocompletePredictionsResponse predictionsResponse = task.getResult();
-                            if(predictionsResponse != null){
+                            if (predictionsResponse != null) {
                                 predictionList = predictionsResponse.getAutocompletePredictions();
                                 List<String> suggestionsList = new ArrayList<>();
-                                for(int i=0;i< predictionList.size();i++){
+                                for (int i = 0; i < predictionList.size(); i++) {
                                     AutocompletePrediction prediction = predictionList.get(i);
                                     suggestionsList.add(prediction.getFullText(null).toString());
                                 }
                                 materialSearchBar.updateLastSuggestions(suggestionsList);
-                                if(!materialSearchBar.isSuggestionsVisible()){
-                                   materialSearchBar.showSuggestionsList();
+                                if (!materialSearchBar.isSuggestionsVisible()) {
+                                    materialSearchBar.showSuggestionsList();
                                 }
                             }
                         } else {
@@ -163,7 +162,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         materialSearchBar.setSuggstionsClickListener(new SuggestionsAdapter.OnItemViewClickListener() {
             @Override
             public void OnItemClickListener(int position, View v) {
-                if(position >= predictionList.size()){
+                if (position >= predictionList.size()) {
                     return;
                 }
                 AutocompletePrediction selectedPrediction = predictionList.get(position);
@@ -177,7 +176,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                     }
                 }, 1000);
                 InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                if(imm != null)
+                if (imm != null)
                     imm.hideSoftInputFromWindow(materialSearchBar.getWindowToken(), InputMethodManager.HIDE_IMPLICIT_ONLY);
                 final String placeId = selectedPrediction.getPlaceId();
                 List<Place.Field> placeFields = Arrays.asList(Place.Field.LAT_LNG);
@@ -189,14 +188,14 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         Place place = fetchPlaceResponse.getPlace();
                         Log.i("mytag", "Place found: " + place.getName());
                         LatLng latLngOfPlace = place.getLatLng();
-                        if(latLngOfPlace != null){
+                        if (latLngOfPlace != null) {
                             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLngOfPlace, DEFAULT_ZOOM));
                         }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        if(e instanceof ApiException){
+                        if (e instanceof ApiException) {
                             ApiException apiException = (ApiException) e;
                             apiException.printStackTrace();
                             int statusCode = apiException.getStatusCode();
@@ -237,7 +236,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
-        if(mapView != null && mapView.findViewById(Integer.parseInt("1")) != null){
+        if (mapView != null && mapView.findViewById(Integer.parseInt("1")) != null) {
             View locationButton = ((View) mapView.findViewById(Integer.parseInt("1")).getParent()).findViewById(Integer.parseInt("2"));
             RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) locationButton.getLayoutParams();
             layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP, 0);
@@ -266,7 +265,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         task.addOnFailureListener(MapActivity.this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                if(e instanceof ResolvableApiException){
+                if (e instanceof ResolvableApiException) {
                     ResolvableApiException resolvable = (ResolvableApiException) e;
                     try {
                         resolvable.startResolutionForResult(MapActivity.this, 51);
@@ -280,9 +279,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.setOnMyLocationButtonClickListener(new GoogleMap.OnMyLocationButtonClickListener() {
             @Override
             public boolean onMyLocationButtonClick() {
-                if(materialSearchBar.isSuggestionsVisible())
+                if (materialSearchBar.isSuggestionsVisible())
                     materialSearchBar.clearSuggestions();
-                if(materialSearchBar.isSearchEnabled())
+                if (materialSearchBar.isSearchEnabled())
                     materialSearchBar.disableSearch();
                 return false;
             }
@@ -292,33 +291,33 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 51) {
-            if(resultCode == RESULT_OK) {
+        if (requestCode == 51) {
+            if (resultCode == RESULT_OK) {
                 getDeviceLocation();
             }
         }
     }
 
     @SuppressLint("MissingPermission")
-    private void getDeviceLocation(){
+    private void getDeviceLocation() {
         mFusedLocationProviderClient.getLastLocation()
                 .addOnCompleteListener(new OnCompleteListener<Location>() {
                     @Override
                     public void onComplete(@NonNull Task<Location> task) {
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             mLastKnownLocation = task.getResult();
-                            if(mLastKnownLocation != null){
+                            if (mLastKnownLocation != null) {
                                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude()), DEFAULT_ZOOM));
                             } else {
                                 final LocationRequest locationRequest = LocationRequest.create();
                                 locationRequest.setInterval(10000);
                                 locationRequest.setFastestInterval(5000);
                                 locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-                                locationCallback = new LocationCallback(){
+                                locationCallback = new LocationCallback() {
                                     @Override
                                     public void onLocationResult(LocationResult locationResult) {
                                         super.onLocationResult(locationResult);
-                                        if(locationResult == null) {
+                                        if (locationResult == null) {
                                             return;
                                         }
                                         mLastKnownLocation = locationResult.getLastLocation();
